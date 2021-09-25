@@ -6,8 +6,8 @@ class FarmMod(loader.Module):
 
     async def watcher(self, message):
         try:
-            if message.chat_id in {-1001393280414}:
-                if message.sender_id in {1533519976}:      
+            if message.chat_id in {-1001289617428, -1001515004936, -1001556219219, -1001513410255, -1001554976048, -1001522073995, -1001512388763, -1001431851856, -1001509448567, -1001599747465, -1001571179123, -1001512479941, -1001516553675, -1001587923938, -1001591381375}:
+                if message.sender_id in {692657524}:      
                     if "бубукаше го мну 100" in message.message:
                         await message.respond('отправить букашки 100')
         except: pass
