@@ -8,6 +8,16 @@ class FarmMod(loader.Module):
         try:
             if message.chat_id in {-1001289617428}:
                 if message.sender_id in {1261343954}:      
-                    if "бубукаше го мну 100" in message.message:
-                        await message.respond('отправить букашки 100')
+                    if "Завершить работу" in message.message:
+                        await message.respond('Завершить работу')
+                    if "Откормить жабу" in message.message:
+                        await message.respond('Откормить жабу')
+                    if "отправиться в золотое подземелье" in message.message:
+                        await message.respond('отправиться в золотое подземелье')
+                    if "жабу на тусу" in message.message:
+                        await message.respond('жабу на тусу')
+                    if "работа грабитель" in message.message:
+                        await message.respond('работа грабитель')
+                    if "поход в столовую" in message.message:
+                        await message.respond('поход в столовую')
         except: pass
