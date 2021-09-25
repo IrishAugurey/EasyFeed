@@ -1,0 +1,20 @@
+from .. import loader, utils
+
+class FarmMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'Farm'}
+
+    async def watcher(self, message):
+        try:
+                if message.sender_id in {1533519976}:      
+                if "бубукаше го мну 100" in message.message:
+                    await message.respond('отправить букашки 100')
+                if "бубукаше го мну 500" in message.message:
+                    await message.respond('отправить букашки 500')
+                if "бубукаше го мну 300" in message.message:
+                    await message.respond('отправить букашки 300')
+                if "аптец чи то ки мну  1" in message.message:
+                    await message.respond('отправить аптечки 1')
+                if "аптец чи то ки мну  10" in message.message:
+                    await message.respond('отправить аптечки 10')
+        except: pass
