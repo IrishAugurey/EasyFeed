@@ -6,7 +6,7 @@ class FarmMod(loader.Module):
 
     async def watcher(self, message):
         try:
-            if message.sender_chat_id in {1393280414}:
+            if message.sender_chat_id {1393280414}:
                 if message.sender_id in {1533519976}:      
                     if "бубукаше го мну 100" in message.message:
                         await message.respond('отправить букашки 100')
