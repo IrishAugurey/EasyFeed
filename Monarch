@@ -20,4 +20,6 @@ class FarmMod(loader.Module):
                         await message.respond('работа грабитель')
                     if "поход в столовую" in message.message:
                         await message.respond('поход в столовую')
+                    if "Реанимировать жабку" in message.message:
+                        await message.respond('Реанимировать жабку')
         except: pass
