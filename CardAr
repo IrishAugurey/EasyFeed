@@ -1,0 +1,17 @@
+from .. import loader, utils
+from asyncio import sleep
+
+class MapMod(loader.Module):
+    """Модуль для Арсения."""
+    strings = {'name': 'Map'}
+
+    async def watcher(self, message):
+        try:
+            if message.sender_id in {1124824021}:
+                if "Сейчас выбирает ход: Арсений" in message.message:
+                    click = (await message.click(0)).message
+                if "Господин Арсений" in message.message:
+                    await message.respond('Реанимировать жабу')
+                    await sleep (3)
+                    await message.respond('Отправиться за картой')
+        except: pass
