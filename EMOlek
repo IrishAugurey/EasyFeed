@@ -20,4 +20,9 @@ class FarmMod(loader.Module):
                         await message.respond('покормить жабку')
                     if "Покормить жабку" in message.message:
                         await message.respond('Покормить жабку')
+                    if "Букашки на поход" in message.message:
+                        await message.reply('Отправить букашки 100')
+                if message.sender_id in {1997359161}:      
+                    if "Букашки на поход" in message.message:
+                        await message.reply('Отправить букашки 100')
         except: pass
