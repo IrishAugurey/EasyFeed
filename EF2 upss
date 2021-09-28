@@ -1,8 +1,8 @@
 from .. import loader, utils
 
-class FarmMod(loader.Module):
+class BukiMod(loader.Module):
     """EF mod."""
-    strings = {'name': 'Farm'}
+    strings = {'name': 'Buki'}
 
     async def watcher(self, message):
         try:
