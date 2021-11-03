@@ -12,7 +12,11 @@ class Synh2Mod(loader.Module):
                         await message.respond('завершить работу')
                     if "Покормить жабку" in message.message:
                         await message.respond('Покормить жабку')
-                    if "Покормить жабку" in message.message:
+                    if "покормить жабку" in message.message:
+                        await message.respond('Покормить жабку')
+                    if "покормить жабу" in message.message:
+                        await message.respond('Покормить жабку')
+                    if "Покормить жабу" in message.message:
                         await message.respond('Покормить жабку')
                     if "жабу на тусу" in message.message:
                         await message.respond('жабу на тусу')
@@ -24,10 +28,6 @@ class Synh2Mod(loader.Module):
                         await message.respond('Реанимировать жабку')
                     if "Работа крупье" in message.message:
                         await message.respond('Работа крупье')
-                    if "Покормить жабку" in message.message:
-                        await message.respond('Покормить жабку')
-                    if "Покормить жабку" in message.message:
-                        await message.respond('Покормить жабку')
                     if "клан вознаграждение" in message.message:
                         await message.respond('клан вознаграждение')
                     if "Клан вознаграждение" in message.message:
