@@ -1,3 +1,5 @@
+from .. import loader, utils
+
 class Synh4Mod(loader.Module):
     """EF mod."""
     strings = {'name': 'Synh4'}
