@@ -1,8 +1,8 @@
 from .. import loader, utils
 
-class TTSMod(loader.Module):
+class TttsMod(loader.Module):
     """EF mod."""
-    strings = {'name': 'TTS'}
+    strings = {'name': 'Ttts'}
 
     async def watcher(self, message):
         try:
