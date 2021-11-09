@@ -9,11 +9,11 @@ class TttsMod(loader.Module):
             if message.chat_id in {-1001556219219, -1001520606324, -1001264854926}:
                 if message.sender_id in {2036298501}:   
                    if "Откормить жабку" in message.message:
-                        await message.respond('Откормить жабку')
+                       await message.respond('Откормить жабку')
                    if "Завершить работу" in message.message:
-                        await message.respond('Завершить работу')
+                       await message.respond('Завершить работу')
                    if "Отправиться в золотое подземелье" in message.message:
-                        await message.respond('Отправиться в золотое подземелье')
+                       await message.respond('Отправиться в золотое подземелье')
                    if "Работа крупье" in message.message:
-                        await message.respond('Работа крупье')                   
+                       await message.respond('Работа крупье')                   
         except: pass
