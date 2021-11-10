@@ -1,0 +1,13 @@
+from .. import loader, utils
+
+class MapMapMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'MapMap'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001796234604, -1001777209118, -1001755806545, -1001745450607, -1001733976889, -1001724206423, -1001719231014, -1001685778566, -1001677247185, -1001658628295, -1001524897670, -1001370315566, -435123440}: 
+                if message.sender_id in {449434040}:      
+                    if "Гони карту" in message.message:
+                        await message.reply('отправить карту')
+        except: pass
