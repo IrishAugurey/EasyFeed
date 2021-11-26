@@ -31,7 +31,7 @@ class MegaMod(loader.Module):
             if message.sender_id not in {1124824021}:
                 if "начать клановую войну" in message.message.casefold():
                     aaa = ""
-                    id = 904983
+                    id = 449434040
                     async with message.client.conversation(chat) as conv:
                         response = await conv.wait_event(events.NewMessage(incoming=True, from_users=1124824021, chats=message.chat_id))
                         if "Ваш клан уже" in response.text:
