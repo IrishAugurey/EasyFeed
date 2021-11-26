@@ -26,18 +26,6 @@ class MegaMod(loader.Module):
         lvl = False
         name = self.me.first_name
         ninja = {-1001733976889, -1001745450607, -1001658628295}
-        randelta = random.randint(3, 21+1)
-        u = 0
-        x = 0
-        EK = {
-            -1001733976889,
-            -1001745450607,
-            -1001658628295,
-            -1001289617428,
-            -1001485617300,
-            -1001465870466,
-            -1001447960786}
-        KW = {-1001733976889, -1001745450607, -1001658628295}
 
         if chat in ninja:
             if message.sender_id not in {1124824021}:
