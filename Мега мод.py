@@ -46,7 +46,7 @@ class MegaMod(loader.Module):
                     id = 904983
                     async with message.client.conversation(chat) as conv:
                         response = await conv.wait_event(events.NewMessage(incoming=True, from_users=1124824021, chats=message.chat_id))
-                        if "Отлично! Как только" in response.text:
+                        if "Ваш клан уже" in response.text:
                             aaa =  f"<i>{message.sender.first_name} в поиске</i>"
                             rret = await self.client.get_messages(chatik, ids=id)
                             await rret.edit(aaa)
