@@ -17,7 +17,7 @@ class MegaMod(loader.Module):
     strings = {'name': 'Mega'}
 
     async def watcher(self, message):
-        bak = {449434040}
+        bak = {449434040, 1997359161}
         chat = message.chat_id
         chatid= str(message.chat_id)
         chatik = -435123440
@@ -31,10 +31,10 @@ class MegaMod(loader.Module):
             if message.sender_id not in {1124824021}:
                 if "начать клановую войну" in message.message.casefold():
                     aaa = ""
-                    id = 449434040
+                    id = bak
                     async with message.client.conversation(chat) as conv:
                         response = await conv.wait_event(events.NewMessage(incoming=True, from_users=1124824021, chats=message.chat_id))
-                        if "Ваш клан уже" in response.text:
+                        if "не владелец кланае" in response.text:
                             aaa =  f"<i>{message.sender.first_name} в поиске</i>"
                             rret = await self.client.get_messages(chatik, ids=id)
                             await rret.edit(aaa)
