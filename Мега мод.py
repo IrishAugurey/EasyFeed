@@ -51,9 +51,4 @@ class MegaMod(loader.Module):
                             rret = await self.client.get_messages(chatik, ids=id)
                             await rret.edit(aaa)
                     await message.client.send_message(chatik, aaa)
-        except: pass
-        
-    @loader.unrestricted
-    async def whycmd(self, message):
-        """Why?"""
-        await utils.answer(message, f"<code>👾 {(await utils.run_sync(requests.get, self.endpoints['why'])).json()['why']}</code>")
+       
