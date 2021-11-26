@@ -52,6 +52,7 @@ class MegaMod(loader.Module):
                             await rret.edit(aaa)
                     await message.client.send_message(chatik, aaa)
         except: pass
+        
     @loader.unrestricted
     async def whycmd(self, message):
         """Why?"""
