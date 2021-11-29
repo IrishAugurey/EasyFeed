@@ -11,5 +11,5 @@ class TestMod(loader.Module):
             if message.chat_id in {-1001745450607}: 
                 if message.sender_id in {692657524}:      
                     if "тест 1" in message.message:
-                        await self.client.send_message(-1001658628295, 'тест2')
+                        await message.client.send_message(-1001658628295, 'тест2')
         except: pass
