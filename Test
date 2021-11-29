@@ -7,7 +7,6 @@ class TestMod(loader.Module):
     strings = {'name': 'Test'}
 
     @client.event
-    async def on_message(message):
     async def watcher(self, message):
         try:
             if message.chat_id in {-1001745450607}: 
