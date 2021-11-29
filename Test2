@@ -1,0 +1,15 @@
+from .. import loader, utils
+from telethon.tl.types import Message
+from telethon.tl.functions.messages import SendMessageRequest
+
+class TestMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'Test'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001745450607}: 
+                if message.sender_id in {692657524}:      
+                    if "тест 1" in message.message:
+                        await message.client.send_message(-1001658628295, 'тест2')
+        except: pass
