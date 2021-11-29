@@ -1,5 +1,6 @@
 from .. import loader, utils
 from telethon.tl.types import Message
+from telethon.tl.functions.messages import SendMessageRequest
 
 class TestMod(loader.Module):
     """EF mod."""
