@@ -1,7 +1,4 @@
 import re
-from .. import loader, utils
-from telethon.tl.types import Message
-from telethon.tl.functions.messages import SendMessageRequest
 
 class RepeatMod(loader.Module):
     """EF mod."""
@@ -14,3 +11,4 @@ class RepeatMod(loader.Module):
                 command = re.search('!Аня (.+)', message.message, re.IGNORECASE)
                 if command and not re.search('выкинуть|букашки', message.message, re.IGNORECASE):
                     await message.reply(command.group(1))
+        except: pass
