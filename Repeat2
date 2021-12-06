@@ -1,5 +1,3 @@
-ines (12 sloc)  580 Bytes
-   
 import re
 
 class RepeatMod(loader.Module):
