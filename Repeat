@@ -7,8 +7,9 @@ class RepeatMod(loader.Module):
     async def watcher(self, message):
         try:
             if message.chat_id == -1001289617428 and message.sender_id == 449434040:
-            if "!Аня" in message.message.casefold():
-                command = re.search('!Аня (.+)', message.message, re.IGNORECASE)
-                if command and not re.search('выкинуть|букашки', message.message, re.IGNORECASE):
-                    await message.reply(command.group(1))
+                if "!Аня" in message.message.casefold():
+                    command = re.search('!Аня (.+)', message.message, re.IGNORECASE)
+                    if command and not re.search('выкинуть|букашки', message.message, re.IGNORECASE):
+                        await message.reply(command.group(1))
+
         except: pass
