@@ -10,8 +10,8 @@ class MapAMod(loader.Module):
             if message.chat_id in {-1001796234604, -1001404462304, -1001465870466, -1001441941681, -1001777209118, -1001755806545, -1001745450607, -1001733976889, -1001724206423, -1001719231014, -1001685778566, -1001677247185, -1001658628295, -1001524897670, -1001370315566, -435123440}:
                  if message.sender_id in {1124824021}:
                      if "Сейчас выбирает ход: Rетроsпекtiv" in message.message:
-                         await sleep (128)
+                         await sleep (20)
                          await message.respond('Реанимировать жабу')
-                         await sleep (640)
+                         await sleep (10)
                          click = (await message.click(0)).message
         except: pass
