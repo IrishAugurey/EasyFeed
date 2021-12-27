@@ -1,7 +1,7 @@
 from .. import loader, utils
 from asyncio import sleep
 
-class MapMod(loader.Module):
+class MapNeuuMod(loader.Module):
     """Модуль для Saiev."""
     strings = {'name': 'Map'}
 
