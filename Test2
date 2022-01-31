@@ -7,9 +7,13 @@ class TestMod(loader.Module):
     strings = {'name': 'Test'}
 
     async def watcher(self, message):
+        ninja = [
+            -1001441941681,
+            -1001521085260,
+        ]
         try:
-            if message.chat_id in {-1001745450607}: 
+            if message.chat_id in {-1001581140406}: 
                 if message.sender_id in {692657524}:      
                     if "тест 1" in message.message:
-                        await message.client.send_message(-1001658628295, 'тест2')
+                        await message.client.send_message(ninja, 'тест2')
         except: pass
