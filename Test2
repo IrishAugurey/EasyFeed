@@ -1,6 +1,7 @@
 from .. import loader, utils
 from telethon.tl.types import Message
 from telethon.tl.functions.messages import SendMessageRequest
+from asyncio import sleep
 
 class TestMod(loader.Module):
     """EF mod."""
@@ -16,5 +17,6 @@ class TestMod(loader.Module):
                 if message.sender_id in {692657524}:      
                     if "тест 1" in message.message:
                         for id in ninja:
+                            await sleep (48)
                             await message.client.send_message(id, "тест2")
         except: pass
