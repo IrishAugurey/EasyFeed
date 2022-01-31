@@ -15,5 +15,6 @@ class TestMod(loader.Module):
             if message.chat_id in {-1001581140406}: 
                 if message.sender_id in {692657524}:      
                     if "тест 1" in message.message:
-                        await message.client.send_message(ninja, 'тест2')
+                        for id in ninja:
+                            await message.client.send_message(id, "тест2")
         except: pass
