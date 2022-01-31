@@ -8,8 +8,8 @@ class TestMod(loader.Module):
 
     async def watcher(self, message):
         try:
-            if message.chat_id in {-1001745450607}: 
+            if message.chat_id in {-1001521085260}: 
                 if message.sender_id in {692657524}:      
                     if "тест 1" in message.message:
-                        await message.client.send_message(-1001658628295, 'тест2')
+                        await message.client.send_message(-1001581140406, 'тест2')
         except: pass
