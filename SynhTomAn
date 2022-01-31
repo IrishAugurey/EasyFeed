@@ -1,0 +1,67 @@
+from .. import loader, utils
+
+class SynhMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'Synh'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001441941681}: 
+                if message.sender_id in {449434040}:      
+                    if "Завершить работу" in message.message:
+                        await message.respond('Завершить работу')
+                    if "завершить работу" in message.message:
+                        await message.respond('завершить работу')
+                    if "Откормить жабу" in message.message:
+                        await message.respond('Откормить жабу')
+                    if "Откормить жабку" in message.message:
+                        await message.respond('Откормить жабку')
+                    if "отправиться в золотое подземелье" in message.message:
+                        await message.respond('отправиться в золотое подземелье')
+                    if "Отправиться в золотое подземелье" in message.message:
+                        await message.respond('отправиться в золотое подземелье')
+                    if "жабу на тусу" in message.message:
+                        await message.respond('жабу на тусу')
+                    if "работа грабитель" in message.message:
+                        await message.respond('работа крупье')
+                    if "поход в столовую" in message.message:
+                        await message.respond('поход в столовую')
+                    if "Реанимировать жабку" in message.message:
+                        await message.respond('Реанимировать жабку')
+                    if "Работа крупье" in message.message:
+                        await message.respond('Работа крупье')
+                    if "откормить жабу" in message.message:
+                        await message.respond('Откормить жабу')
+                    if "откормить жабку" in message.message:
+                        await message.respond('Откормить жабку')
+                    if "клан вознаграждение" in message.message:
+                        await message.respond('клан вознаграждение')
+                    if "Клан вознаграждение" in message.message:
+                        await message.respond('клан вознаграждение')
+                    if "Жабу на тусу" in message.message:
+                        await message.respond('жабу на тусу')
+                    if "Жабку на тусу" in message.message:
+                        await message.respond('жабу на тусу')
+                    if "жабку на тусу" in message.message:
+                        await message.respond('жабу на тусу')
+                    if "Работа грабитель" in message.message:
+                        await message.respond('работа крупье')
+                    if "Поход в столовую" in message.message:
+                        await message.respond('поход в столовую')
+                    if "реанимировать жабку" in message.message:
+                        await message.respond('Реанимировать жабку')
+                    if "работа крупье" in message.message:
+                        await message.respond('Работа крупье')
+                    if "реанимировать жабу" in message.message:
+                        await message.respond('Реанимировать жабку')
+                    if "Реанимировать жабу" in message.message:
+                        await message.respond('Реанимировать жабку')
+                    if "работа крупье" in message.message:
+                        await message.respond('Работа крупье')
+                    if "Брак вознаграждение" in message.message:
+                        await message.respond('Брак вознаграждение')
+                    if "брак вознаграждение" in message.message:
+                        await message.respond('Брак вознаграждение')
+                    if "Ань, проатачь" in message.message:
+                        await message.respond('Напасть на клан')
+        except: pass
