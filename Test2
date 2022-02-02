@@ -15,7 +15,7 @@ class TestMod(loader.Module):
         try:
             if message.chat_id in {-1001581140406}: 
                 if message.sender_id in {692657524}:      
-                    if "тест 1" in message.message:
+                    if "тест 1" in message.message.casefold():
                         for id in ninja:
                             await sleep (48)
                             await message.client.send_message(id, "тест2")
